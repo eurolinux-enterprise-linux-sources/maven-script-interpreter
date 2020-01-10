@@ -1,6 +1,6 @@
 Name:           maven-script-interpreter
 Version:        1.0
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        Maven Script Interpreter
 License:        ASL 2.0
 URL:            http://maven.apache.org/shared/%{name}
@@ -58,6 +58,9 @@ API documentation for %{name}.
 
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.0-6
+- Mass rebuild 2013-12-27
+
 * Fri Aug 16 2013 Stanislav Ochotnicky <sochotnicky@redhat.com> - 1.0-5
 - Migrate away from mvn-rpmbuild (#997440)
 
