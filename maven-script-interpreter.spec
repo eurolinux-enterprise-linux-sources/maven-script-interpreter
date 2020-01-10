@@ -1,6 +1,6 @@
 Name:           maven-script-interpreter
 Version:        1.0
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        Maven Script Interpreter
 License:        ASL 2.0
 URL:            http://maven.apache.org/shared/%{name}
@@ -13,6 +13,7 @@ BuildRequires:  jpackage-utils
 BuildRequires:  groovy
 BuildRequires:  maven-local
 BuildRequires:  maven-surefire-provider-junit4
+BuildRequires:  maven-shared
 BuildRequires:  plexus-containers-component-metadata
 
 %description
@@ -58,6 +59,10 @@ API documentation for %{name}.
 
 
 %changelog
+* Fri Aug  1 2014 Mikolaj Izdebski <mizdebsk@redhat.com> - 1.0-7
+- Add missing build-requires on maven-shared
+- Resolves: rhbz#1074930
+
 * Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.0-6
 - Mass rebuild 2013-12-27
 
